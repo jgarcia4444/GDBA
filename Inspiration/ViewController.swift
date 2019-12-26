@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import Foundation
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let session  = URLSession.shared
+        let url = URL(string: "https://type.fit/api/quotes")!
+        let task = session.dataTask(with: url, completionHandler: { data, response, error in
+            let dataJSON = JSON(data)
+            print(dataJSON)
+        })
+        task.resume()
     }
-
 
 }
 
