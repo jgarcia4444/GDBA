@@ -8,9 +8,7 @@
 
 import Foundation
 
-struct Quote {
-    
-    let text: String?
-    let author: String?
-    
+class Quote {
+    var text: String = ""
+    var author: String = ""
 }
