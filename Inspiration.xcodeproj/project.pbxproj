@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1259C723B6D06E00714CD2 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1259C623B6D06E00714CD2 /* Quote.swift */; };
 		1FA5156B23B574C8008A1713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5156A23B574C8008A1713 /* AppDelegate.swift */; };
 		1FA5156D23B574C8008A1713 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5156C23B574C8008A1713 /* SceneDelegate.swift */; };
 		1FA5156F23B574C8008A1713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA5156E23B574C8008A1713 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1259C623B6D06E00714CD2 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		1FA5156723B574C8008A1713 /* Inspiration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inspiration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA5156A23B574C8008A1713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FA5156C23B574C8008A1713 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				1FA5156A23B574C8008A1713 /* AppDelegate.swift */,
 				1FA5156C23B574C8008A1713 /* SceneDelegate.swift */,
+				1F1259C623B6D06E00714CD2 /* Quote.swift */,
 				1FA5156E23B574C8008A1713 /* ViewController.swift */,
 				1FA5157023B574C8008A1713 /* Main.storyboard */,
 				1FA5157323B574C8008A1713 /* Assets.xcassets */,
@@ -80,7 +83,6 @@
 				8CCF5332D2742689E71275D6 /* Pods-Inspiration.debug.xcconfig */,
 				ACB0EED5FD46EBC1A2E94BCE /* Pods-Inspiration.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1259C723B6D06E00714CD2 /* Quote.swift in Sources */,
 				1FA5156F23B574C8008A1713 /* ViewController.swift in Sources */,
 				1FA5156B23B574C8008A1713 /* AppDelegate.swift in Sources */,
 				1FA5156D23B574C8008A1713 /* SceneDelegate.swift in Sources */,
