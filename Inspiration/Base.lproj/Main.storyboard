@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Jbo-Zr-MJf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,6 +8,55 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="zcL-Jx-cqX">
+            <objects>
+                <viewController id="IlU-nL-Rs5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qQ9-lJ-nDj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Girls Dream Believe and Achieve" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8W-t0-zhN">
+                                <rect key="frame" x="84" y="220" width="246" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="ooo-8S-mq8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjP-cn-7MT">
+                                <rect key="frame" x="111" y="501" width="192" height="27"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="zSC-ef-PaD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Check out some quotes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Mwq-WU-Q3F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J8W-t0-zhN" firstAttribute="leading" secondItem="toe-zP-ryV" secondAttribute="leading" constant="84" id="2vk-4C-bVl"/>
+                            <constraint firstItem="tjP-cn-7MT" firstAttribute="leading" secondItem="toe-zP-ryV" secondAttribute="leading" constant="111" id="43E-0g-Ksh"/>
+                            <constraint firstItem="toe-zP-ryV" firstAttribute="trailing" secondItem="tjP-cn-7MT" secondAttribute="trailing" constant="111" id="YLQ-p3-pXl"/>
+                            <constraint firstItem="tjP-cn-7MT" firstAttribute="top" secondItem="J8W-t0-zhN" secondAttribute="bottom" constant="240" id="awn-1X-VJ0"/>
+                            <constraint firstItem="J8W-t0-zhN" firstAttribute="top" secondItem="toe-zP-ryV" secondAttribute="top" constant="132" id="k8g-wA-rok"/>
+                            <constraint firstItem="toe-zP-ryV" firstAttribute="trailing" secondItem="J8W-t0-zhN" secondAttribute="trailing" constant="84" id="wgV-P9-xOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="toe-zP-ryV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="On3-NG-uI1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kza-UL-hYe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="55.580357142857139"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Inspiration" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,20 +64,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75B-ia-9xo">
-                                <rect key="frame" x="139" y="432" width="139" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Generate Quote">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="generateQuoteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fih-5U-zVs"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2Q-Ox-wy1">
-                                <rect key="frame" x="0.0" y="195" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="239" width="414" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="NXy-al-q9s"/>
                                 </constraints>
@@ -37,7 +74,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wq-H6-Gfu">
-                                <rect key="frame" x="0.0" y="272" width="414" height="20.5"/>
+                                <rect key="frame" x="0.0" y="316" width="414" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="AuP-G2-tqW"/>
                                 </constraints>
@@ -45,18 +82,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75B-ia-9xo">
+                                <rect key="frame" x="137.5" y="474" width="139" height="36"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="kY2-GW-20F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate Quote">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateQuoteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fih-5U-zVs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="C2Q-Ox-wy1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="CCR-8C-0Zm"/>
                             <constraint firstItem="7wq-H6-Gfu" firstAttribute="top" secondItem="C2Q-Ox-wy1" secondAttribute="bottom" constant="56.5" id="FpI-85-W56"/>
+                            <constraint firstItem="75B-ia-9xo" firstAttribute="top" secondItem="7wq-H6-Gfu" secondAttribute="bottom" constant="137.5" id="GDT-lz-E5q"/>
                             <constraint firstItem="7wq-H6-Gfu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="H4g-D5-RwD"/>
+                            <constraint firstItem="75B-ia-9xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oef-6U-Cfx"/>
                             <constraint firstItem="C2Q-Ox-wy1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fRk-7p-U2a"/>
                             <constraint firstItem="7wq-H6-Gfu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iMe-oO-Obj"/>
                             <constraint firstItem="C2Q-Ox-wy1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="jWj-YN-ISs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Kd5-Op-TXn"/>
                     <connections>
                         <outlet property="authorLabel" destination="7wq-H6-Gfu" id="feg-B9-yqr"/>
                         <outlet property="textLabel" destination="C2Q-Ox-wy1" id="6pF-Fg-ihy"/>
@@ -64,7 +118,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436.23188405797106" y="63.616071428571423"/>
+            <point key="canvasLocation" x="971.01449275362324" y="54.910714285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v5e-zF-kcp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jbo-Zr-MJf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="k9E-eH-zOB">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IlU-nL-Rs5" kind="relationship" relationship="rootViewController" id="sOt-bq-Sb6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UMx-1A-nsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852.17391304347836" y="55.580357142857139"/>
         </scene>
     </scenes>
 </document>
